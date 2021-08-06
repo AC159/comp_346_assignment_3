@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Class DiningPhilosophers
  * The main starter.
@@ -37,12 +39,30 @@ public class DiningPhilosophers {
 	 */
 	public static void main(String[] argv) {
 		try {
-			/*
-			 * TODO:
-			 * Should be settable from the command line
-			 * or the default if no arguments supplied.
-			 */
+
+			Scanner sc = new Scanner(System.in);
+			int numberOfPhil = 0;
+
+			while (true) {
+				System.out.println("Enter the number of philosophers that will attend (enter 0 for default value of 4): ");
+				String value = sc.next();
+				try {
+					numberOfPhil = Integer.parseInt(value);
+					if (numberOfPhil >= 0) {
+						break;
+					} else {
+						System.out.println("Invalid number, please try again");
+					}
+				} catch (NumberFormatException e) {
+					System.out.println("Invalid number, please try again");
+				}
+			}
+
 			int iPhilosophers = DEFAULT_NUMBER_OF_PHILOSOPHERS;
+
+			if (numberOfPhil != 0) {
+				iPhilosophers = numberOfPhil;
+			}
 
 			// Make the monitor aware of how many philosophers there are
 			soMonitor = new Monitor(iPhilosophers);

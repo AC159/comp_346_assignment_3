@@ -23,9 +23,9 @@ public class Philosopher extends BaseThread {
 	public void eat() {
 		System.out.println("Philosopher " + getTID() + " has started eating!");
 		try {
-//			Thread.yield();
+			this.randomYield();
 			Thread.sleep((long)(Math.random() * TIME_TO_WASTE));
-//			Thread.yield();
+			this.randomYield();
 		}
 		catch(InterruptedException e) {
 			System.err.println("Philosopher.eat():");
@@ -46,9 +46,9 @@ public class Philosopher extends BaseThread {
 	public void think() {
 		System.out.println("Philosopher " + getTID() + " has started thinking!");
 		try {
-//			Thread.yield();
+			this.randomYield();
 			Thread.sleep((long)(Math.random() * TIME_TO_WASTE));
-//			Thread.yield();
+			this.randomYield();
 		}
 		catch(InterruptedException e) {
 			System.err.println("Philosopher.think():");
@@ -68,9 +68,9 @@ public class Philosopher extends BaseThread {
 	 */
 	public void talk() {
 		System.out.println("Philosopher " + getTID() + " has started talking!");
-//		Thread.yield();
+		this.randomYield();
 		saySomething();
-//		Thread.yield();
+		this.randomYield();
 		System.out.println("Philosopher " + getTID() + " has finished talking!");
 	}
 
