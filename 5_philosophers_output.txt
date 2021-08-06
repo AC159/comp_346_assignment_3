@@ -1,0 +1,998 @@
+/usr/lib/jvm/jdk-15.0.1/bin/java -javaagent:/snap/intellij-idea-ultimate/311/lib/idea_rt.jar=43763:/snap/intellij-idea-ultimate/311/bin -Dfile.encoding=UTF-8 -classpath /home/anastassy/IdeaProjects/comp_346_assignment_3/out/production/comp_346_assignment_3 DiningPhilosophers
+Enter the number of philosophers that will attend (enter 0 for default value of 4):
+5
+5 philosopher(s) came in for a dinner.
+Thread id: 1
+[HUNGRY, THINKING, THINKING, THINKING, THINKING]
+[EATING, THINKING, THINKING, THINKING, THINKING]
+Thread id: 5
+[EATING, THINKING, THINKING, THINKING, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 1 has started eating!
+Thread id: 4
+[EATING, THINKING, THINKING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Thread id: 3
+[EATING, THINKING, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Thread id: 2
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+Thread 2 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 2 is waiting to eat
+Philosopher 5 has started eating!
+Thread 3 is waiting to eat
+Philosopher 1 has started thinking!
+Thread 4 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 2 is waiting to eat
+[THINKING, HUNGRY, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 3 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Thread 1 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+[HUNGRY, HUNGRY, HUNGRY, EATING, TALKING]
+Philosopher 5 has started talking!
+Philosopher 5 says: You know, true is false and false is true if you think of it
+Philosopher 5 has finished talking!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, EATING, TALKING]
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, HUNGRY]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 5 is waiting to eat
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Philosopher 3 has started eating!
+Thread 1 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, THINKING, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 5 is waiting to eat
+[HUNGRY, EATING, THINKING, THINKING, HUNGRY]
+Philosopher 2 has started eating!
+Thread 1 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[HUNGRY, EATING, THINKING, THINKING, HUNGRY]
+[HUNGRY, EATING, THINKING, TALKING, HUNGRY]
+Philosopher 4 has started talking!
+Philosopher 4 says: If thee cannot speak, thee must be silent
+Philosopher 4 has finished talking!
+Thread id: 4
+[HUNGRY, EATING, THINKING, TALKING, HUNGRY]
+[HUNGRY, EATING, THINKING, THINKING, HUNGRY]
+Thread 5 is waiting to eat
+Thread id: 4
+[HUNGRY, EATING, THINKING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Thread 1 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[HUNGRY, EATING, THINKING, HUNGRY, HUNGRY]
+[HUNGRY, THINKING, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 5 is waiting to eat
+[EATING, THINKING, THINKING, HUNGRY, HUNGRY]
+Philosopher 1 has started eating!
+Thread 4 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, THINKING, THINKING, HUNGRY, HUNGRY]
+[THINKING, THINKING, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+[THINKING, THINKING, THINKING, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Thread 4 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[THINKING, THINKING, HUNGRY, HUNGRY, EATING]
+Thread 3 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Thread 1 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, THINKING, HUNGRY, EATING, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, THINKING, HUNGRY, EATING, HUNGRY]
+[HUNGRY, THINKING, HUNGRY, THINKING, HUNGRY]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 1 is waiting to eat
+Thread 5 is waiting to eat
+[HUNGRY, THINKING, EATING, THINKING, HUNGRY]
+Philosopher 3 has started eating!
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, THINKING, EATING, THINKING, HUNGRY]
+[HUNGRY, TALKING, EATING, THINKING, HUNGRY]
+Philosopher 2 has started talking!
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher 2 has finished talking!
+Thread id: 2
+[HUNGRY, TALKING, EATING, THINKING, HUNGRY]
+[HUNGRY, THINKING, EATING, THINKING, HUNGRY]
+Thread id: 2
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+Thread 5 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[HUNGRY, HUNGRY, EATING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, HUNGRY, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 2 is waiting to eat
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Philosopher 1 has started eating!
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+Thread 2 is waiting to eat
+[THINKING, HUNGRY, THINKING, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Thread 4 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[THINKING, HUNGRY, THINKING, HUNGRY, EATING]
+[THINKING, HUNGRY, THINKING, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+[THINKING, EATING, THINKING, HUNGRY, THINKING]
+Philosopher 2 has started eating!
+Thread 4 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[THINKING, EATING, THINKING, HUNGRY, THINKING]
+[THINKING, EATING, TALKING, HUNGRY, THINKING]
+Philosopher 3 has started talking!
+Philosopher 3 says: If thee cannot speak, thee must be silent
+Philosopher 3 has finished talking!
+Thread id: 3
+[THINKING, EATING, TALKING, HUNGRY, THINKING]
+[THINKING, EATING, THINKING, HUNGRY, THINKING]
+Thread 4 is waiting to eat
+Thread id: 3
+[THINKING, EATING, HUNGRY, HUNGRY, THINKING]
+Thread 3 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[THINKING, EATING, HUNGRY, HUNGRY, THINKING]
+[THINKING, THINKING, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+[THINKING, THINKING, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 3 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[THINKING, THINKING, HUNGRY, EATING, THINKING]
+[TALKING, THINKING, HUNGRY, EATING, THINKING]
+Philosopher 1 has started talking!
+Philosopher 1 says: You know, true is false and false is true if you think of it
+Philosopher 1 has finished talking!
+Thread id: 1
+[TALKING, THINKING, HUNGRY, EATING, THINKING]
+[THINKING, THINKING, HUNGRY, EATING, THINKING]
+Thread id: 1
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+[HUNGRY, THINKING, HUNGRY, EATING, TALKING]
+Philosopher 5 has started talking!
+Philosopher 5 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher 5 has finished talking!
+Thread id: 5
+[HUNGRY, THINKING, HUNGRY, EATING, TALKING]
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+Thread 1 is waiting to eat
+Thread id: 5
+[HUNGRY, THINKING, HUNGRY, EATING, HUNGRY]
+Thread 5 is waiting to eat
+Thread 3 is waiting to eat
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+Thread 2 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, HUNGRY]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 1 is waiting to eat
+Thread 2 is waiting to eat
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Philosopher 3 has started eating!
+Thread 5 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, THINKING, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+[EATING, HUNGRY, THINKING, THINKING, HUNGRY]
+Philosopher 1 has started eating!
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+Philosopher 3 has started talking!
+Philosopher 3 says: If thee cannot speak, thee must be silent
+Philosopher 3 has finished talking!
+Thread id: 3
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread id: 3
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+Thread 3 is waiting to eat
+Thread 2 is waiting to eat
+Thread 4 is waiting to eat
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Philosopher 5 has finished eating!
+Thread id: 5
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+[THINKING, EATING, HUNGRY, HUNGRY, THINKING]
+Philosopher 2 has started eating!
+Philosopher 1 has finished thinking!
+Thread id: 1
+[THINKING, EATING, HUNGRY, HUNGRY, THINKING]
+[TALKING, EATING, HUNGRY, HUNGRY, THINKING]
+Philosopher 1 has started talking!
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher 1 has finished talking!
+Thread id: 1
+[TALKING, EATING, HUNGRY, HUNGRY, THINKING]
+[THINKING, EATING, HUNGRY, HUNGRY, THINKING]
+Thread id: 1
+[HUNGRY, EATING, HUNGRY, HUNGRY, THINKING]
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, EATING, HUNGRY, HUNGRY, THINKING]
+[HUNGRY, EATING, HUNGRY, HUNGRY, TALKING]
+Philosopher 5 has started talking!
+Philosopher 5 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 5 has finished talking!
+Thread id: 5
+[HUNGRY, EATING, HUNGRY, HUNGRY, TALKING]
+[HUNGRY, EATING, HUNGRY, HUNGRY, THINKING]
+Thread 1 is waiting to eat
+Thread 4 is waiting to eat
+Thread 3 is waiting to eat
+Thread id: 5
+[HUNGRY, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[HUNGRY, EATING, HUNGRY, HUNGRY, HUNGRY]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 1 is waiting to eat
+Thread 5 is waiting to eat
+Thread 3 is waiting to eat
+[HUNGRY, THINKING, HUNGRY, EATING, HUNGRY]
+Philosopher 4 has started eating!
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+Thread 2 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, HUNGRY]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 1 is waiting to eat
+Thread 2 is waiting to eat
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Philosopher 3 has started eating!
+Thread 5 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+[HUNGRY, HUNGRY, EATING, TALKING, HUNGRY]
+Philosopher 4 has started talking!
+Philosopher 4 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 4 has finished talking!
+Thread id: 4
+[HUNGRY, HUNGRY, EATING, TALKING, HUNGRY]
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Thread id: 4
+[HUNGRY, HUNGRY, EATING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Thread 1 is waiting to eat
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, HUNGRY, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 4 is waiting to eat
+Thread 2 is waiting to eat
+Thread 5 is waiting to eat
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Philosopher 1 has started eating!
+Philosopher 3 has finished thinking!
+Thread id: 3
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+Philosopher 3 has started talking!
+Philosopher 3 says: My number is 3
+Philosopher 3 has finished talking!
+Thread id: 3
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread id: 3
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+Thread 3 is waiting to eat
+Thread 2 is waiting to eat
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Thread 4 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+[TALKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+Philosopher 1 has started talking!
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher 1 has finished talking!
+Thread id: 1
+[TALKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+Thread 2 is waiting to eat
+Thread id: 1
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 1 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 3 is waiting to eat
+Thread 1 is waiting to eat
+[HUNGRY, EATING, HUNGRY, HUNGRY, THINKING]
+Philosopher 2 has started eating!
+Thread 4 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[HUNGRY, EATING, HUNGRY, HUNGRY, THINKING]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 3 is waiting to eat
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 1 is waiting to eat
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+[HUNGRY, TALKING, HUNGRY, EATING, THINKING]
+Philosopher 2 has started talking!
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher 2 has finished talking!
+Thread id: 2
+[HUNGRY, TALKING, HUNGRY, EATING, THINKING]
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+Thread 3 is waiting to eat
+Thread 1 is waiting to eat
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Thread 2 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, HUNGRY]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Philosopher 3 has started eating!
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, THINKING, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 5 is waiting to eat
+[EATING, HUNGRY, THINKING, THINKING, HUNGRY]
+Philosopher 1 has started eating!
+Thread 2 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+[THINKING, EATING, THINKING, HUNGRY, HUNGRY]
+Philosopher 2 has started eating!
+Philosopher 3 has finished thinking!
+Thread id: 3
+[THINKING, EATING, THINKING, HUNGRY, HUNGRY]
+[THINKING, EATING, TALKING, HUNGRY, HUNGRY]
+Philosopher 3 has started talking!
+Philosopher 3 says: If thee cannot speak, thee must be silent
+Philosopher 3 has finished talking!
+Thread id: 3
+[THINKING, EATING, TALKING, HUNGRY, HUNGRY]
+[THINKING, EATING, THINKING, HUNGRY, HUNGRY]
+Thread id: 3
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+[TALKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Philosopher 1 has started talking!
+Philosopher 1 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher 1 has finished talking!
+Thread id: 1
+[TALKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread id: 1
+[HUNGRY, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[HUNGRY, EATING, HUNGRY, HUNGRY, HUNGRY]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 1 is waiting to eat
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Thread 4 is waiting to eat
+Thread 3 is waiting to eat
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+[HUNGRY, TALKING, HUNGRY, HUNGRY, EATING]
+Philosopher 2 has started talking!
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 2 has finished talking!
+Thread id: 2
+[HUNGRY, TALKING, HUNGRY, HUNGRY, EATING]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 2 is waiting to eat
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 3 is waiting to eat
+Thread 1 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, THINKING]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+[HUNGRY, HUNGRY, EATING, THINKING, THINKING]
+Philosopher 3 has started eating!
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, HUNGRY, EATING, THINKING, THINKING]
+[HUNGRY, HUNGRY, EATING, THINKING, TALKING]
+Philosopher 5 has started talking!
+Philosopher 5 says: My number is 5
+Philosopher 5 has finished talking!
+Thread id: 5
+[HUNGRY, HUNGRY, EATING, THINKING, TALKING]
+[HUNGRY, HUNGRY, EATING, THINKING, THINKING]
+Thread 2 is waiting to eat
+Thread id: 5
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Thread 5 is waiting to eat
+Thread 1 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, THINKING, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 2 is waiting to eat
+[EATING, HUNGRY, THINKING, THINKING, HUNGRY]
+Philosopher 1 has started eating!
+Thread 5 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+Philosopher 3 has started talking!
+Philosopher 3 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 3 has finished talking!
+Thread id: 3
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread id: 3
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Thread 2 is waiting to eat
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+Thread 3 is waiting to eat
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Philosopher 2 has started eating!
+Philosopher 2 has finished eating!
+Thread id: 2
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, THINKING, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+[THINKING, THINKING, HUNGRY, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Philosopher 1 has finished thinking!
+Thread id: 1
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Thread 1 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 3 is waiting to eat
+Thread 1 is waiting to eat
+[HUNGRY, THINKING, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Thread 2 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, HUNGRY]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, HUNGRY]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Philosopher 3 has started eating!
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, THINKING, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 5 is waiting to eat
+[EATING, HUNGRY, THINKING, THINKING, HUNGRY]
+Philosopher 1 has started eating!
+Thread 2 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+Philosopher 3 has started talking!
+Philosopher 3 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 3 has finished talking!
+Thread id: 3
+[EATING, HUNGRY, TALKING, HUNGRY, HUNGRY]
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Thread id: 3
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+Thread 3 is waiting to eat
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Philosopher 2 has started eating!
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+[TALKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Philosopher 1 has started talking!
+Philosopher 1 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 1 has finished talking!
+Thread id: 1
+[TALKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread id: 1
+[HUNGRY, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[HUNGRY, EATING, HUNGRY, HUNGRY, HUNGRY]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 1 is waiting to eat
+Thread 4 is waiting to eat
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Thread 3 is waiting to eat
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+[HUNGRY, TALKING, HUNGRY, HUNGRY, EATING]
+Philosopher 2 has started talking!
+Philosopher 2 says: 2 + 2 = 5 for extremely large values of 2...
+Philosopher 2 has finished talking!
+Thread id: 2
+[HUNGRY, TALKING, HUNGRY, HUNGRY, EATING]
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+Thread 3 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 2 is waiting to eat
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 3 is waiting to eat
+Thread 1 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, THINKING]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 2 is waiting to eat
+Thread 1 is waiting to eat
+[HUNGRY, HUNGRY, EATING, THINKING, THINKING]
+Philosopher 3 has started eating!
+Philosopher 5 has finished thinking!
+Thread id: 5
+[HUNGRY, HUNGRY, EATING, THINKING, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[HUNGRY, HUNGRY, EATING, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 3 has finished eating!
+Thread id: 3
+[HUNGRY, HUNGRY, EATING, HUNGRY, HUNGRY]
+[HUNGRY, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 2 is waiting to eat
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+Philosopher 1 has started eating!
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+[THINKING, EATING, THINKING, HUNGRY, HUNGRY]
+Philosopher 2 has started eating!
+Thread 5 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[THINKING, EATING, THINKING, HUNGRY, HUNGRY]
+[THINKING, THINKING, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+[THINKING, THINKING, THINKING, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Thread 4 is waiting to eat
+Philosopher 1 has finished thinking!
+Thread id: 1
+[THINKING, THINKING, THINKING, HUNGRY, EATING]
+[TALKING, THINKING, THINKING, HUNGRY, EATING]
+Philosopher 1 has started talking!
+Philosopher 1 says: My number is 1
+Philosopher 1 has finished talking!
+Thread id: 1
+[TALKING, THINKING, THINKING, HUNGRY, EATING]
+[THINKING, THINKING, THINKING, HUNGRY, EATING]
+Thread id: 1
+[HUNGRY, THINKING, THINKING, HUNGRY, EATING]
+Thread 1 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[HUNGRY, THINKING, THINKING, HUNGRY, EATING]
+[HUNGRY, THINKING, TALKING, HUNGRY, EATING]
+Philosopher 3 has started talking!
+Philosopher 3 says: My number is 3
+Philosopher 3 has finished talking!
+Thread id: 3
+[HUNGRY, THINKING, TALKING, HUNGRY, EATING]
+[HUNGRY, THINKING, THINKING, HUNGRY, EATING]
+Thread id: 3
+[HUNGRY, THINKING, HUNGRY, HUNGRY, EATING]
+Thread 3 is waiting to eat
+Thread 1 is waiting to eat
+Thread 4 is waiting to eat
+Philosopher 2 has finished thinking!
+Thread id: 2
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 2 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, EATING]
+[HUNGRY, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+Thread 3 is waiting to eat
+Thread 2 is waiting to eat
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 1 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[HUNGRY, HUNGRY, HUNGRY, EATING, THINKING]
+[HUNGRY, HUNGRY, HUNGRY, THINKING, THINKING]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 3 is waiting to eat
+[EATING, HUNGRY, HUNGRY, THINKING, THINKING]
+Philosopher 1 has started eating!
+Thread 2 is waiting to eat
+Philosopher 5 has finished thinking!
+Thread id: 5
+[EATING, HUNGRY, HUNGRY, THINKING, HUNGRY]
+Thread 5 is waiting to eat
+Philosopher 4 has finished thinking!
+Thread id: 4
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+Thread 4 is waiting to eat
+Philosopher 1 has finished eating!
+Thread id: 1
+[EATING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread1
+Philosopher 1 has started thinking!
+[THINKING, HUNGRY, EATING, HUNGRY, HUNGRY]
+Philosopher 3 has started eating!
+Thread 4 is waiting to eat
+Thread 5 is waiting to eat
+Thread 2 is waiting to eat
+Philosopher 1 has finished thinking!
+Philosopher 3 has finished eating!
+Thread id: 3
+[THINKING, HUNGRY, EATING, HUNGRY, HUNGRY]
+[THINKING, HUNGRY, THINKING, HUNGRY, HUNGRY]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+Thread 4 is waiting to eat
+[THINKING, EATING, THINKING, HUNGRY, HUNGRY]
+Philosopher 2 has started eating!
+Thread 5 is waiting to eat
+Philosopher 3 has finished thinking!
+Thread id: 3
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+Thread 3 is waiting to eat
+Philosopher 2 has finished eating!
+Thread id: 2
+[THINKING, EATING, HUNGRY, HUNGRY, HUNGRY]
+[THINKING, THINKING, HUNGRY, HUNGRY, HUNGRY]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Thread 4 is waiting to eat
+Thread 3 is waiting to eat
+[THINKING, THINKING, HUNGRY, HUNGRY, EATING]
+Philosopher 5 has started eating!
+Philosopher 2 has finished thinking!
+Thread id: 2
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+Thread 2 is waiting to eat
+Philosopher 5 has finished eating!
+Thread id: 5
+[THINKING, HUNGRY, HUNGRY, HUNGRY, EATING]
+[THINKING, HUNGRY, HUNGRY, HUNGRY, THINKING]
+PutDown() notified - Thread5
+Philosopher 5 has started thinking!
+[THINKING, HUNGRY, HUNGRY, EATING, THINKING]
+Philosopher 4 has started eating!
+Thread 2 is waiting to eat
+Thread 3 is waiting to eat
+Philosopher 4 has finished eating!
+Thread id: 4
+[THINKING, HUNGRY, HUNGRY, EATING, THINKING]
+[THINKING, HUNGRY, HUNGRY, THINKING, THINKING]
+PutDown() notified - Thread4
+Philosopher 4 has started thinking!
+Thread 2 is waiting to eat
+[THINKING, HUNGRY, EATING, THINKING, THINKING]
+Philosopher 3 has started eating!
+Philosopher 3 has finished eating!
+Thread id: 3
+[THINKING, HUNGRY, EATING, THINKING, THINKING]
+[THINKING, HUNGRY, THINKING, THINKING, THINKING]
+PutDown() notified - Thread3
+Philosopher 3 has started thinking!
+[THINKING, EATING, THINKING, THINKING, THINKING]
+Philosopher 2 has started eating!
+Philosopher 5 has finished thinking!
+Philosopher 4 has finished thinking!
+Thread id: 4
+[THINKING, EATING, THINKING, THINKING, THINKING]
+[THINKING, EATING, THINKING, TALKING, THINKING]
+Philosopher 4 has started talking!
+Philosopher 4 says: You know, true is false and false is true if you think of it
+Philosopher 4 has finished talking!
+Thread id: 4
+[THINKING, EATING, THINKING, TALKING, THINKING]
+[THINKING, EATING, THINKING, THINKING, THINKING]
+Philosopher 3 has finished thinking!
+Philosopher 2 has finished eating!
+Thread id: 2
+[THINKING, EATING, THINKING, THINKING, THINKING]
+[THINKING, THINKING, THINKING, THINKING, THINKING]
+PutDown() notified - Thread2
+Philosopher 2 has started thinking!
+Philosopher 2 has finished thinking!
+Thread id: 2
+[THINKING, THINKING, THINKING, THINKING, THINKING]
+[THINKING, TALKING, THINKING, THINKING, THINKING]
+Philosopher 2 has started talking!
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 2 has finished talking!
+Thread id: 2
+[THINKING, TALKING, THINKING, THINKING, THINKING]
+[THINKING, THINKING, THINKING, THINKING, THINKING]
+All philosophers have left. System terminates normally.
+
+Process finished with exit code 0
